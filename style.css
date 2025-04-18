@@ -1,0 +1,266 @@
+ html{
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #2e1e17;
+      color: #f5e6d8;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      background-color: #3a2a22;
+      padding: 0 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f5e6d8;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+      color: #f4b66c;
+      font-size: 1.2rem;
+    }
+
+    .left {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f4b66c;
+    }
+
+    .firstsection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 80px 20px;
+      background-image: url('pic2.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .firstsection::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); 
+      z-index: -1;
+    }
+
+    .firstsection>div {
+      width: 100%;
+      max-width: 480px;
+      margin: 20px;
+    }
+
+    .leftsection {
+      font-size: 2.5rem;
+      margin: 20px 0;
+      color: #f4b66c;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-grey {
+      color: #cbb7a1;
+    }
+
+    #element {
+      color: #f4b66c;
+      font-weight: 500;
+    }
+
+    main hr {
+      border: 0;
+      background: #6e4e3a;
+      height: 1px;
+      margin: 40px 60px;
+    }
+
+    .secondsection {
+      max-width: 90vw;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .secondsection h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #f5e6d8;
+      margin-top: 10px;
+    }
+
+    .secondsection .box {
+      background: #f4b66c;
+      width: 100%;
+      height: 2px;
+      margin: 56px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .secondsection .vertical {
+      height: 93px;
+      width: 1px;
+      background-color: #f4b66c;
+      margin: 0 100px;
+    }
+
+    .projects {
+      padding: 60px 10%;
+      background-color: #3a2a22;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      font-weight: 500;
+      color: #f4b66c;
+    }
+
+    .project {
+      margin-bottom: 40px;
+    }
+
+    .project h3 {
+      font-weight: 400;
+      color: #f5e6d8;
+    }
+
+    .project p {
+      color: #d8c2ac;
+    }
+
+    .about,
+    .services,
+    .contact {
+      padding: 60px 10%;
+      background-color: #3a2a22;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #f4b66c;
+      margin-bottom: 20px;
+    }
+
+    .about p,
+    .services p,
+    .contact p {
+      font-size: 1.2rem;
+      color: #d8c2ac;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #3a2a22;
+      color: #f5e6d8;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+    .service-card {
+  background-size: cover;
+  background-position: right;
+  padding: 20px 40px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.3rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.02);
+}
+
+.services .service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .firstsection {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .firstsection>div {
+        width: 90%;
+      }
+
+      .leftsection {
+        text-align: center;
+      }
+
+      .secondsection .box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .secondsection .vertical {
+        margin: 20px 0;
+      }
+    }
